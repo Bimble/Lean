@@ -29,7 +29,7 @@ namespace QuantConnect.Algorithm.Framework
     /// <summary>
     /// Algorithm framework base class that enforces a modular approach to algorithm development
     /// </summary>
-    public abstract class QCAlgorithmFramework : QCAlgorithm
+    public class QCAlgorithmFramework : QCAlgorithm
     {
         /// <summary>
         /// Returns true since algorithms derived from this use the framework
