@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>QuantConnect.Common</AssemblyName>
-    <RootNamespace >QuantConnect.Common</RootNamespace>
+    <RootNamespace>QuantConnect.Common</RootNamespace>
     <TargetFramework>net452</TargetFramework>
     <LangVersion>6</LangVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
