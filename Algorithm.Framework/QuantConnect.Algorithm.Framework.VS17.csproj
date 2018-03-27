@@ -21,4 +21,7 @@
     <ProjectReference Include="..\Common\QuantConnect.VS17.csproj" />
     <ProjectReference Include="..\Indicators\QuantConnect.Indicators.VS17.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
 </Project>

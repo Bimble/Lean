@@ -14,6 +14,7 @@
     <PackageReference Include="IKVM" Version="7.3.4830" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="NodaTime" Version="1.3.4" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="QuantConnect.Fxcm, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Fxcm\QuantConnect.Fxcm.dll</HintPath>

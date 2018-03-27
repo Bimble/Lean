@@ -22,4 +22,7 @@
     <ProjectReference Include="..\Configuration\QuantConnect.Configuration.VS17.csproj" />
     <ProjectReference Include="..\Logging\QuantConnect.Logging.VS17.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
 </Project>
