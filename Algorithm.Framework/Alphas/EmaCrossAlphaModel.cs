@@ -29,7 +29,8 @@ namespace QuantConnect.Algorithm.Framework.Alphas
     {
         private readonly int _fastPeriod;
         private readonly int _slowPeriod;
-        private readonly TimeSpan _predictionInterval;
+        private readonly Resolution _resolution;
+        private readonly int _predictionInterval;
         private readonly Dictionary<Symbol, SymbolData> _symbolDataBySymbol;
 
         /// <summary>
@@ -37,12 +38,17 @@ namespace QuantConnect.Algorithm.Framework.Alphas
         /// </summary>
         /// <param name="fastPeriod">The fast EMA period</param>
         /// <param name="slowPeriod">The slow EMA period</param>
-        /// <param name="predictionInterval">The interval over which we're predicting</param>
-        public EmaCrossAlphaModel(int fastPeriod, int slowPeriod, TimeSpan predictionInterval)
+        /// <param name="resolution">The resolution of data sent into the EMA indicators</param>
+        public EmaCrossAlphaModel(
+            int fastPeriod = 12,
+            int slowPeriod = 26,
+            Resolution resolution = Resolution.Daily
+            )
         {
             _fastPeriod = fastPeriod;
             _slowPeriod = slowPeriod;
-            _predictionInterval = predictionInterval;
+            _resolution = resolution;
+            _predictionInterval = fastPeriod;
             _symbolDataBySymbol = new Dictionary<Symbol, SymbolData>();
         }
 
@@ -60,18 +66,19 @@ namespace QuantConnect.Algorithm.Framework.Alphas
             {
                 if (symbolData.Fast.IsReady && symbolData.Slow.IsReady)
                 {
+                    var insightPeriod = _resolution.ToTimeSpan().Multiply(_predictionInterval);
                     if (symbolData.FastIsOverSlow)
                     {
                         if (symbolData.Slow > symbolData.Fast)
                         {
-                            insights.Add(new Insight(symbolData.Symbol, InsightType.Price, InsightDirection.Down, _predictionInterval));
+                            insights.Add(new Insight(symbolData.Symbol, InsightType.Price, InsightDirection.Down, insightPeriod));
                         }
                     }
                     else if (symbolData.SlowIsOverFast)
                     {
                         if (symbolData.Fast > symbolData.Slow)
                         {
-                            insights.Add(new Insight(symbolData.Symbol, InsightType.Price, InsightDirection.Up, _predictionInterval));
+                            insights.Add(new Insight(symbolData.Symbol, InsightType.Price, InsightDirection.Up, insightPeriod));
                         }
                     }
                 }
