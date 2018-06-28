@@ -28,7 +28,7 @@
     <PackageReference Include="DotNetZip" Version="1.10.1" />
     <PackageReference Include="WebSocket4Net" Version="0.14.1.0" />
     <PackageReference Include="WebSocketSharpFork" Version="1.0.4.0" />
-    <PackageReference Include="QuantConnect.pythonnet" Version="1.0.5.5" />
+    <PackageReference Include="QuantConnect.pythonnet" Version="1.0.5.7" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="QuantConnect.Fxcm, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
