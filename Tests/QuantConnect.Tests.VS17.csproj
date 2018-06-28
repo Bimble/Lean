@@ -163,7 +163,6 @@
     <ProjectReference Include="..\Configuration\QuantConnect.Configuration.VS17.csproj" />
     <ProjectReference Include="..\Engine\QuantConnect.Lean.Engine.VS17.csproj" />
     <ProjectReference Include="..\Indicators\QuantConnect.Indicators.VS17.csproj" />
-    <ProjectReference Include="..\Jupyter\QuantConnect.Jupyter.VS17.csproj" />
     <ProjectReference Include="..\Launcher\QuantConnect.Lean.Launcher.VS17.csproj" />
     <ProjectReference Include="..\Logging\QuantConnect.Logging.VS17.csproj" />
     <ProjectReference Include="..\Messaging\QuantConnect.Messaging.VS17.csproj" />

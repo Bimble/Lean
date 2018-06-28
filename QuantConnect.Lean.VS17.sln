@@ -30,8 +30,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantConnect.Lean.Engine.VS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantConnect.Indicators.VS17", "Indicators\QuantConnect.Indicators.VS17.csproj", "{F697997F-23B0-49DC-8A06-0F448AA31E30}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantConnect.Jupyter.VS17", "Jupyter\QuantConnect.Jupyter.VS17.csproj", "{708CEB30-D819-4A5B-993A-BA9A143D3607}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantConnect.Lean.Launcher.VS17", "Launcher\QuantConnect.Lean.Launcher.VS17.csproj", "{1813D0E3-90F9-4F9A-8754-85FDEA51B58F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantConnect.Logging.VS17", "Logging\QuantConnect.Logging.VS17.csproj", "{EF70ED11-B5F6-4827-B6F5-7D72FDFCCDFD}"
@@ -218,18 +216,6 @@ Global
 		{F697997F-23B0-49DC-8A06-0F448AA31E30}.Release|x64.Build.0 = Release|Any CPU
 		{F697997F-23B0-49DC-8A06-0F448AA31E30}.Release|x86.ActiveCfg = Release|Any CPU
 		{F697997F-23B0-49DC-8A06-0F448AA31E30}.Release|x86.Build.0 = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|x64.Build.0 = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Debug|x86.Build.0 = Debug|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|Any CPU.Build.0 = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|x64.ActiveCfg = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|x64.Build.0 = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|x86.ActiveCfg = Release|Any CPU
-		{708CEB30-D819-4A5B-993A-BA9A143D3607}.Release|x86.Build.0 = Release|Any CPU
 		{1813D0E3-90F9-4F9A-8754-85FDEA51B58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1813D0E3-90F9-4F9A-8754-85FDEA51B58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1813D0E3-90F9-4F9A-8754-85FDEA51B58F}.Debug|x64.ActiveCfg = Debug|Any CPU
